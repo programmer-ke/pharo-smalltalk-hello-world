@@ -31,7 +31,7 @@ MyStack >> noItems [
 	^ noItems
 ]
 
-{ #category : #removing }
+{ #category : #operations }
 MyStack >> pop [
 	"decrements the no. of items in the stack returning the final number"
 	"scope: class-variables  &  instance-variables"	
@@ -39,7 +39,7 @@ MyStack >> pop [
 	noItems := noItems - 1.
 ]
 
-{ #category : #'API-remotes' }
+{ #category : #operations }
 MyStack >> push [
 	"increment no. items in stack"
 	"scope: class-variables  &  instance-variables"	
