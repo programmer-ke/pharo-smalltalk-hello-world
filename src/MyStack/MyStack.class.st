@@ -55,6 +55,15 @@ MyStack >> pop [
 	noItems := noItems - 1.
 ]
 
+{ #category : #printing }
+MyStack >> printOn: aStream [
+	"comment stating purpose of instance-side message"
+	"scope: class-variables  &  instance-variables"	
+			
+	super printOn: aStream.
+	aStream nextPutAll: ' with value: ', noItems printString.
+]
+
 { #category : #operations }
 MyStack >> push [
 	"increment no. items in stack"
