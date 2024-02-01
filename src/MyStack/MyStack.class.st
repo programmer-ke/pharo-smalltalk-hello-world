@@ -15,6 +15,14 @@ Class {
 	#category : #MyStack
 }
 
+{ #category : #accessing }
+MyStack class >> startingAt: anInteger [
+	"comment stating purpose of class-side message"
+	"scope: class-variables  &  class-instance-variables"	
+			
+	^ self new noItems: anInteger
+]
+
 { #category : #initialization }
 MyStack >> initialize [
 	"initialize noItems to 0"
@@ -29,6 +37,14 @@ MyStack >> noItems [
 	"scope: class-variables  &  instance-variables"	
 			
 	^ noItems
+]
+
+{ #category : #accessing }
+MyStack >> noItems: anInteger [
+	"comment stating purpose of instance-side message"
+	"scope: class-variables  &  instance-variables"	
+			
+	noItems := anInteger
 ]
 
 { #category : #operations }

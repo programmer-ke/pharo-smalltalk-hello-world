@@ -13,3 +13,11 @@ MyStackTest >> testIsPushedAndPoped [
 	s push push pop.
 	self assert: s noItems equals: 1
 ]
+
+{ #category : #tests }
+MyStackTest >> testMyStackStartingAt5 [
+	"comment stating purpose of instance-side message"
+	"scope: class-variables  &  instance-variables"	
+			
+	self assert: (MyStack startingAt: 5) noItems equals: 5
+]
